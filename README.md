@@ -71,7 +71,7 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 	- integration of pedestrian detection, multi agent tracking and circular neighborhood (in social scale)
 	- adding two different LSTMs to capture the interaction information between the target person and neighboring pedestrians
 	- NN used: LSTM
-	- Dataset: UCY (ADE/FDE but seems to measure in different prediction time which is not specified anywhere but according to qual results it is half of other methods)^:w
+	- Dataset: UCY (ADE/FDE but seems to measure in different prediction time which is not specified anywhere but according to qual results it is half of other methods)
 - Pedestrian Trajectory Prediction Using a Social Pyramid, 2019 PRICAI
 - Path predictions using object attributes and semantic environment, 2019 VISIGRAPP, [Paper](http://mprg.jp/data/MPRG/C_group/C20190225_minoura.pdf)
 - Probabilistic Path Planning using Obstacle Trajectory Prediction, 2019 [CoDS-COMAD '19](http://cods-comad.in/2019/index.html), [Paper](https://dl.acm.org/citation.cfm?id=3297006)
@@ -81,9 +81,13 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 - Peeking into the Future: Predicting Future Person Activities and Locations in Videos, 2019 CVPR, [Paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Liang_Peeking_Into_the_Future_Predicting_Future_Person_Activities_and_Locations_CVPR_2019_paper.pdf), [Code](https://github.com/google/next-prediction)
 - Learning to Infer Relations for Future Trajectory Forecast, 2019 CVPR [*Precognition Workshop*](https://sites.google.com/view/ieeecvf-cvpr2019-precognition), [Paper](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Precognition/Choi_Learning_to_Infer_Relations_for_Future_Trajectory_Forecast_CVPRW_2019_paper.pdf)
 - TraPHic: Trajectory Prediction in Dense and Heterogeneous Traffic Using Weighted Interactions, 2019 CVPR, [Paper](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Chandra_TraPHic_Trajectory_Prediction_in_Dense_and_Heterogeneous_Traffic_Using_Weighted_CVPR_2019_paper.pdf>), [Code](https://github.com/rohanchandra30/TrackNPred)
+	-
 - Which Way Are You Going? Imitative Decision Learning for Path Forecasting in Dynamic Scenes, 2019 CVPR, [Paper](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Li_Which_Way_Are_You_Going_Imitative_Decision_Learning_for_Path_CVPR_2019_paper.pdf>)
 - Overcoming Limitations of Mixture Density Networks: A Sampling and Fitting Framework for Multimodal Future Prediction, 2019 CVPR, [Paper](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Makansi_Overcoming_Limitations_of_Mixture_Density_Networks_A_Sampling_and_Fitting_CVPR_2019_paper.pdf>)
 - SoPhie: An Attentive GAN for Predicting Paths Compliant to Social and Physical Constraints, 2019 CVPR, [Paper](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Sadeghian_SoPhie_An_Attentive_GAN_for_Predicting_Paths_Compliant_to_Social_CVPR_2019_paper.pdf>)
+	- social and physical constraints taken into account by utilizing trajectory (social) and img of scene (physical contraints)
+	- NN used: CNN Encoder, LSTM Encoder, LSTM-GAN
+	- Datasets: ETH, UCY, Stanford DD
 - Multi-Agent Tensor Fusion for Contextual Trajectory Prediction, 2019 CVPR, [Paper](<http://openaccess.thecvf.com/content_CVPR_2019/papers/Sadeghian_SoPhie_An_Attentive_GAN_for_Predicting_Paths_Compliant_to_Social_CVPR_2019_paper.pdf>)
 - Future Person Localization in First-Person Videos, 2018 CVPR, [Paper](http://openaccess.thecvf.com/content_cvpr_2018/papers/Yagi_Future_Person_Localization_CVPR_2018_paper.pdf), [code](https://github.com/takumayagi/fpl) 
 - Move, Attend and Predict: Anattention-based neural model for people’s movement prediction, 2018 Pattern Recognition Letters, [Paper](https://reader.elsevier.com/reader/sd/pii/S016786551830182X?token=1EF2B664B70D2B0C3ECDD07B6D8B664F5113AEA7533CE5F0B564EF9F4EE90D3CC228CDEB348F79FEB4E8CDCD74D4BA31)
@@ -97,6 +101,10 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 - Tracking by Prediction: A Deep Generative Model for Mutli-Person Localisation and Tracking, 2018 WACV
 - “Seeing is Believing”: Pedestrian Trajectory Forecasting Using Visual Frustum of Attention, 2018 WACV
 - Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks, 2018 CVPR, [code](https://github.com/agrimgupta92/sgan)
+	- trajectory prediction based on data distribution of possible trajectories
+	- only on trajectory data, no explicit knowledge about environment and a so called variety loss which basically computes loss for best of k samples in order to increase multimodality
+	- proposal of pooling based on relativ pedestrian prediction
+	- NN used: LSTM-GAN (LSTM-Encoder/Decoder)
 - Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty, 2018 CVPR, [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.pdf), [code+data](https://github.com/apratimbhattacharyya18/onboard_long_term_prediction)
 - Encoding Crowd Interaction with Deep Neural Network
   for Pedestrian Trajectory Prediction, 2018 CVPR, [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_Encoding_Crowd_Interaction_CVPR_2018_paper.pdf), [code](https://github.com/ShanghaiTechCVDL/CIDNN)
