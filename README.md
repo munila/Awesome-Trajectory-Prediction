@@ -26,25 +26,52 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 
 - Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision, 2020 WACV, [Paper](https://arxiv.org/abs/1911.01138)
 	- unifying human pose estmation ad trajectory prediction
- - Disentanglement of overall motion into easier subparts
- - Backbone: [Quasi-RNN](https://arxiv.org/pdf/1611.01576.pdf´)
- - JAAD dataset (SOTA keypoint displacement error KDE)
+	- Disentanglement of overall motion into easier subparts
+	- NN used: [Quasi-RNN](https://arxiv.org/pdf/1611.01576.pdf´)
+	- JAAD dataset (SOTA keypoint displacement error KDE)
 - Forecasting Trajectory and Behavior of Road-Agents Using Spectral Clustering in Graph-LSTMs, 2019 arXiv, [Paper](https://arxiv.org/pdf/1912.01118.pdf), [Code](https://gamma.umd.edu/researchdirections/autonomousdriving/spectralcows/)
- - combination of spectral graph analysis and deep learning to predict future trajectories (low-level; points) and road-agent behavior (high-level; e.g.overspeeding, braking)
- - Backbone Conv-LSTM
- - Datasets: Argoverse (ADE, FDE SOTA), Lyft (ADE, FDE SOTA), Apolloscape (ADE, FDE SOTA) 
+	- combination of spectral graph analysis and deep learning to predict future trajectories (low-level; points) and road-agent behavior (high-level; e.g.overspeeding, braking)
+	- NN used Conv-LSTM
+	- Datasets: Argoverse (ADE, FDE SOTA), Lyft (ADE, FDE SOTA), Apolloscape (ADE, FDE SOTA) 
 - PIE: A Large-Scale Dataset and Models for Pedestrian Intention Estimation and Trajectory Prediction, 2019 ICCV, [Paper](<http://openaccess.thecvf.com/content_ICCV_2019/papers/Rasouli_PIE_A_Large-Scale_Dataset_and_Models_for_Pedestrian_Intention_Estimation_ICCV_2019_paper.pdf>)
- - Combining modules for trajectory prediction, intention estimation and vehicle speed prediction
- - Backbone:  Conv LSTM 
- - Datasets: PIE, JAAD (MSE over Bounding Box koordinates)
-- STGAT: Modeling Spatial-Temporal Interactions for Human Trajectory Prediction, 2019 ICCV, [Paper](<http://openaccess.thecvf.com/content_ICCV_2019/papers/Huang_STGAT_Modeling_Spatial-Temporal_Interactions_for_Human_Trajectory_Prediction_ICCV_2019_paper.pdf>)
+	- Combining modules for trajectory prediction, intention estimation and vehicle speed prediction
+	- NN used:  Conv LSTM 
+	- Datasets: PIE, JAAD (MSE over Bounding Box koordinates)
+- STGAT: Modeling Spatial-Temporal Interactions for Human Trajectory Prediction, 2019 ICCV, [Paper](http://openaccess.thecvf.com/content_ICCV_2019/papers/Huang_STGAT_Modeling_Spatial-Temporal_Interactions_for_Human_Trajectory_Prediction_ICCV_2019_paper.pdf)
+	- graph attention network to model spatial realtions, LSTM for temporal
+	- NN used: sequence to sequnece LSTM
+	- variety loss according to social GAN (adding different noise to hidden state)
+	- Datasets: UCY/ ETH (ADE/FDE) SOTA 20V20
 - RobustTP: End-to-End Trajectory Prediction for Heterogeneous Road-Agents in Dense Traffic with Noisy Sensor Inputs, 2019 ACM CSCS, [Paper](https://arxiv.org/pdf/1907.08752.pdf), [Code](https://github.com/rohanchandra30/TrackNPred)
+	- designed for road agent trajectory prediction in dense heterogeneous traffic
+	- NN used: Conv-LSTM
+	- Datasets: TRAF (ADE/ SDE)
 - Social and Scene-Aware Trajectory Prediction in Crowded Spaces, 2019 ICCV Workshop, [Paper](<https://arxiv.org/pdf/1909.08840.pdf>), [Code](<https://github.com/Oghma/sns-lstm/>)
+	- prediction based on: people interaction, past observations, semantics of the surrounding
+	- NN used: LSTM
+	- Datasets: ETH/ UCY (ADE/ FDE)
 - Scene Compliant Trajectory Forecast with Agent-Centric Spatio-Temporal Grids, 2019 ArXiv, [Paper](<https://arxiv.org/pdf/1909.07507.pdf>)
+	- model based on 2D grid representation of trajectories in order to address heterognity of current scene data representation (RGB Img) and trajectory (usually Coordinates) to predict human trajectories
+	- NN used: U-Net, ResNet, Conv-LSTM
+	- Datasets: Stanford Drone Dataset (ADE/ FDE)
 - Trajectory Prediction by Coupling Scene-LSTM with Human Movement LSTM, 2019 ISVC, [Paper](https://arxiv.org/pdf/1908.08908.pdf)
+	- scene information and pedestrian movement information trained simultaneously, both utilizing LSTMs
+	- encoding of spatial granularity and commun human movements by 2 level grid structure (cells and subgrids)
+	- filter to determine relevant information within a scene
+	- NN used: LSTM
+	- datasets ETH/ UCY (ADE/FDE)
 - SEABIG: A Deep Learning-Based Method for Location Prediction in Pedestrian Semantic Trajectories, 2019 IEEE Access, [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8790746)
+	- design of Gaussian MMto extract  stopover points from raw trajectories and annotate semantic information on stopover points
+	- Bidirectional Gated Recurrent Unit to predict trajectories and annotate most likely semantic with embedding
+	- NN used: RNN
+	- Datasets: Bejing (dont realy know it ...)
 - Trajectory Prediction of Mobile Construction Resources Toward Pro-active Struck-by Hazard Detection, 2019 ISARC, [Paper](https://search.proquest.com/openview/f6b42779cd7037405799f86f8ca9e544/1?pq-origsite=gscholar&cbl=1646340&casa_token=KxabXy5827MAAAAA:Kv6jfuGvLfpCRhZb1YlzEB0pgpSFJQPKAG8yEcLUwZk4yVjYWn1iCKR1uesqbnH76XJj6smFh5Q)
+	- cannot read whole paper but doesnt seem to relevant to me
 - A novel model based on deep learning for Pedestrian detection and Trajectory prediction, 2019 ITAIC, [Paper](https://ieeexplore.ieee.org/abstract/document/8785741)
+	- integration of pedestrian detection, multi agent tracking and circular neighborhood (in social scale)
+	- adding two different LSTMs to capture the interaction information between the target person and neighboring pedestrians
+	- NN used: LSTM
+	- Dataset: UCY (ADE/FDE but seems to measure in different prediction time which is not specified anywhere but according to qual results it is half of other methods)^:w
 - Pedestrian Trajectory Prediction Using a Social Pyramid, 2019 PRICAI
 - Path predictions using object attributes and semantic environment, 2019 VISIGRAPP, [Paper](http://mprg.jp/data/MPRG/C_group/C20190225_minoura.pdf)
 - Probabilistic Path Planning using Obstacle Trajectory Prediction, 2019 [CoDS-COMAD '19](http://cods-comad.in/2019/index.html), [Paper](https://dl.acm.org/citation.cfm?id=3297006)
@@ -91,7 +118,7 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 - Multi-Step Prediction of Occupancy Grid Maps with Recurrent Neural Networks, 2019 CVPR, [Paper](https://arxiv.org/pdf/1812.09395.pdf)
 - Argoverse: 3D Tracking and Forecasting With Rich Maps, 2019 CVPR, [Paper](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chang_Argoverse_3D_Tracking_and_Forecasting_With_Rich_Maps_CVPR_2019_paper.pdf)
 - Robust Aleatoric Modeling for Future Vehicle Localization, 2019 CVPR [*Precognition Workshop*](https://sites.google.com/view/ieeecvf-cvpr2019-precognition), [Paper](http://openaccess.thecvf.com/content_CVPRW_2019/papers/Precognition/Hudnell_Robust_Aleatoric_Modeling_for_Future_Vehicle_Localization_CVPRW_2019_paper.pdf)
-- Convolutional Social Pooling for Vehicle Trajectory Prediction [Paper](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w29/Deo_Convolutional_Social_Pooling_CVPR_2018_paper.pdf) [code](https://github.com/nachiket92/conv-social-pooling)
+- Convolutional Social Pooling for Vehicle Trajectory Prediction, 2018 CVPR, [Paper](http://openaccess.thecvf.com/content_cvpr_2018_workshops/papers/w29/Deo_Convolutional_Social_Pooling_CVPR_2018_paper.pdf) [code](https://github.com/nachiket92/conv-social-pooling)
 #### Traffic Prediction
 
 
