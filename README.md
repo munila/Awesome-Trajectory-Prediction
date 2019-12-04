@@ -100,11 +100,12 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 - GD-GAN: Generative Adversarial Networks for Trajectory Prediction and Group Detection in Crowds, 2018 ACCV, [Paper](https://arxiv.org/pdf/1812.07667.pdf), [Demo](https://www.youtube.com/watch?v=7cCIC_JIfms)
 - Tracking by Prediction: A Deep Generative Model for Mutli-Person Localisation and Tracking, 2018 WACV
 - “Seeing is Believing”: Pedestrian Trajectory Forecasting Using Visual Frustum of Attention, 2018 WACV
-- Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks, 2018 CVPR, [code](https://github.com/agrimgupta92/sgan)
+- Social GAN: Socially Acceptable Trajectories with Generative Adversarial Networks, 2018 CVPR, [paper](https://arxiv.org/pdf/1803.10892.pdf) [code](https://github.com/agrimgupta92/sgan)
 	- trajectory prediction based on data distribution of possible trajectories
 	- only on trajectory data, no explicit knowledge about environment and a so called variety loss which basically computes loss for best of k samples in order to increase multimodality
 	- proposal of pooling based on relativ pedestrian prediction
 	- NN used: LSTM-GAN (LSTM-Encoder/Decoder)
+	- Datasets: ETH, UCY (ADE/ FDE)
 - Long-Term On-Board Prediction of People in Traffic Scenes under Uncertainty, 2018 CVPR, [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Bhattacharyya_Long-Term_On-Board_Prediction_CVPR_2018_paper.pdf), [code+data](https://github.com/apratimbhattacharyya18/onboard_long_term_prediction)
 - Encoding Crowd Interaction with Deep Neural Network
   for Pedestrian Trajectory Prediction, 2018 CVPR, [[Paper]](http://openaccess.thecvf.com/content_cvpr_2018/papers/Xu_Encoding_Crowd_Interaction_CVPR_2018_paper.pdf), [code](https://github.com/ShanghaiTechCVDL/CIDNN)
