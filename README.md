@@ -16,9 +16,6 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 ## Papers
 #### RNN Related
 - An Empirical Evaluation of Generic Convolutional and Recurrent Networks for Sequence Modeling, 2018, [code](https://github.com/locuslab/TCN)
- - unifying human pose estmation ad trajectory prediction
- - Disentanglement of overall motion into easier subparts
- - Backbone: [Quasi-RNN](https://arxiv.org/pdf/1611.01576.pdf´)
 - When will you do what? - Anticipating Temporal Occurrences of Activities, 2018 CVPR,   [code]( https://github.com/yabufarha/anticipating-activities)
 - Independently Recurrent Neural Network (IndRNN): Building A Longer and Deeper RNN, 2018 CVPR, [code](https://github.com/batzner/indrnn), [keras-code](https://github.com/titu1994/Keras-IndRNN), [pytorch code](https://github.com/StefOe/indrnn-pytorch/blob/master/indrnn.py)
 - Predicting the Next Location: A Recurrent Model with Spatial and Temporal Contexts, 2016 AAAI [code](https://github.com/yongqyu/STRNN)
@@ -28,8 +25,18 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 #### Trajectory Prediction Related
 
 - Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision, 2020 WACV, [Paper](https://arxiv.org/abs/1911.01138)
+ - unifying human pose estmation ad trajectory prediction
+ - Disentanglement of overall motion into easier subparts
+ - Backbone: [Quasi-RNN](https://arxiv.org/pdf/1611.01576.pdf´)
+ - JAAD dataset (SOTA keypoint displacement error KDE)
 - Forecasting Trajectory and Behavior of Road-Agents Using Spectral Clustering in Graph-LSTMs, 2019 arXiv, [Paper](https://arxiv.org/pdf/1912.01118.pdf), [Code](https://gamma.umd.edu/researchdirections/autonomousdriving/spectralcows/)
+ - combination of spectral graph analysis and deep learning to predict future trajectories (low-level; points) and road-agent behavior (high-level; e.g.overspeeding, braking)
+ - Backbone Conv-LSTM
+ - Datasets: Argoverse (ADE, FDE SOTA), Lyft (ADE, FDE SOTA), Apolloscape (ADE, FDE SOTA) 
 - PIE: A Large-Scale Dataset and Models for Pedestrian Intention Estimation and Trajectory Prediction, 2019 ICCV, [Paper](<http://openaccess.thecvf.com/content_ICCV_2019/papers/Rasouli_PIE_A_Large-Scale_Dataset_and_Models_for_Pedestrian_Intention_Estimation_ICCV_2019_paper.pdf>)
+ - Combining modules for trajectory prediction, intention estimation and vehicle speed prediction
+ - Backbone:  Conv LSTM 
+ - Datasets: PIE, JAAD (MSE over Bounding Box koordinates)
 - STGAT: Modeling Spatial-Temporal Interactions for Human Trajectory Prediction, 2019 ICCV, [Paper](<http://openaccess.thecvf.com/content_ICCV_2019/papers/Huang_STGAT_Modeling_Spatial-Temporal_Interactions_for_Human_Trajectory_Prediction_ICCV_2019_paper.pdf>)
 - RobustTP: End-to-End Trajectory Prediction for Heterogeneous Road-Agents in Dense Traffic with Noisy Sensor Inputs, 2019 ACM CSCS, [Paper](https://arxiv.org/pdf/1907.08752.pdf), [Code](https://github.com/rohanchandra30/TrackNPred)
 - Social and Scene-Aware Trajectory Prediction in Crowded Spaces, 2019 ICCV Workshop, [Paper](<https://arxiv.org/pdf/1909.08840.pdf>), [Code](<https://github.com/Oghma/sns-lstm/>)
