@@ -25,7 +25,7 @@ Please feel free to [pull requests](https://github.com/xuehaouwa/Awesome-Traject
 #### Trajectory Prediction Related
 
 - Disentangling Human Dynamics for Pedestrian Locomotion Forecasting with Noisy Supervision, 2020 WACV, [Paper](https://arxiv.org/abs/1911.01138)
- - unifying human pose estmation ad trajectory prediction
+	- unifying human pose estmation ad trajectory prediction
  - Disentanglement of overall motion into easier subparts
  - Backbone: [Quasi-RNN](https://arxiv.org/pdf/1611.01576.pdf´)
  - JAAD dataset (SOTA keypoint displacement error KDE)
